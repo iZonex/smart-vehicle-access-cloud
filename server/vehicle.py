@@ -13,3 +13,7 @@ class Vehicle:
         self.first_registration = first_registration
         self.vehicle_identification_number = vehicle_identification_number
         self.registration_number = registration_number
+
+    @classmethod
+    def get_garage(cls, garage_id):
+        pass

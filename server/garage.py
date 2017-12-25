@@ -1,3 +1,7 @@
+import logging
+from .vehicle import Vehicle
+
+logger = logging.getLogger(__name__)
 
 
 class GarageAdmins:
@@ -18,16 +22,20 @@ class GarageAdmins:
 class GarageVehicles:
 
     def __init__(self, garage_id):
-        pass
+        self.garage_id = garage_id
+        self._load_vehicles()
 
-    def remove(self, user_id):
-        pass
+    def _load_vehicles(self):
+        self.vehicles = Vehicle.get_garage(self.garage_id)
 
-    def add(self, user_id):
-        pass
+    def get_vehicle(self, vehicle_id):
+        return self.vehicles.get(vehicle_id)
 
-    def all(self):
-        pass
+    def remove_vehicle(self, vehicle_id):
+        try:
+            del self.vehicles[vehicle_id]
+        except KeyError as err:
+            logger.error(f'Vehicle {vehicle_id} in garage: {self.garage_id} not found')
 
 
 class Garage:
