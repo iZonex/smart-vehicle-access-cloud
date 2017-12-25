@@ -1,4 +1,8 @@
 
+class VehicleDescription:
+    pass
+
+
 class Vehicle:
 
     def __init__(self, vehicle_id, garage_id, owner_id, manufacture,
