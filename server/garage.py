@@ -40,12 +40,17 @@ class GarageVehicles:
 
 class Garage:
 
-    def __init__(self, garage_id, owner, admins, vehicles):
-        self.garage_id = garage_id
+    def __init__(self, name, owner):
+        self._id = None
+        self.name = name
         self.owner = owner
-        self.admins = GarageAdmins(garage_id)
-        self.vehicles = GarageVehicles(garage_id)
 
     @classmethod
-    def get_garage(cls, garage_id):
+    def get_user_garage(cls, user_id):
         pass
+
+    def get_admins(self):
+        GarageAdmins(self._id)
+
+    def get_vehicles(self):
+        GarageVehicles(self._id)

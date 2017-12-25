@@ -27,6 +27,9 @@ class User:
         self.full_name = full_name
         self.email = email
 
+    def get_user(self, user_id):
+        pass
+
     def set_password(self, password):
         pass
 
