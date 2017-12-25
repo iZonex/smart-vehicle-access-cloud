@@ -5,3 +5,15 @@ class VehicleToken:
         self.user_id = user_id
         self.vehicle_id = vehicle_id
         self.expired = expired
+
+    def create_token(self):
+        pass
+
+    def revoke_token(self):
+        pass
+
+    def all_tokens(self):
+        pass
+
+    def get_token(self):
+        pass
