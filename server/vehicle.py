@@ -5,7 +5,7 @@ class VehicleDescription:
 
 class Vehicle:
 
-    def __init__(self, vehicle_id, garage_id, owner_id, manufacture,
+    def __init__(self, vehicle_id, owner_id, manufacture,
                  vehicle_type, year_of_manufacture, first_registration,
                  vehicle_identification_number, registration_number):
         self.vehicle_id = vehicle_id
