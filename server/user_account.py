@@ -9,14 +9,29 @@ class UserProfile:
         self.zip = zip
         self.phone_number = phone_number
 
+
+class UserPhoto:
+
+    def __init__(self, user_id):
+        pass
+
+
 class User:
 
     def __init__(self, user_id, first_name, second_name, middle_name,
-                 full_name, email, password):
+                 full_name, email):
         self.user_id = user_id
         self.first_name = first_name
         self.second_name = second_name
         self.middle_name = middle_name
         self.full_name = full_name
         self.email = email
-        self.password = password
+
+    def set_password(self, password):
+        pass
+
+    def reset_password(self):
+        pass
+
+    def check_password(self):
+        pass
