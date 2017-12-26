@@ -1,6 +1,7 @@
 .PHONY: help prod dev test version flake
 
 VERSION = 0.0.1
+APP_PATH = server
 
 help:
 	@echo "Smart Vehicle Access cloud"
@@ -14,7 +15,7 @@ help:
 .DEFAULT_GOAL := help
 
 code-check: ## Syntax check by flake
-	flake8 server
+	flake8 $(APP_PATH)
 
 version: ## Output the current version
 	@echo $(VERSION)
