@@ -2,6 +2,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class UserProfile:
 
     def __init__(self, user_id, country, city, address, zip_code,

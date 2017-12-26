@@ -1,14 +1,13 @@
 from .garage import (GarageAdmins, GarageVehicles, Garage)
-from .tokens import VehicleToken
-from .user_account import (User, UserProfile)
+from .user import (User, UserProfile, UserPhoto)
 from .vehicle import Vehicle
 
-__ALL__ = [
+__all__ = [
     'GarageAdmins',
     'GarageVehicles',
     'Garage',
     'User',
     'UserProfile',
-    'Vehicle',
-    'VehicleToken'
+    'UserPhoto',
+    'Vehicle'
 ]

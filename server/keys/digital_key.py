@@ -2,6 +2,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class VehicleKey:
 
     def __init__(self, user_id, vehicle_id, expired):

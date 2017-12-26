@@ -35,7 +35,8 @@ class GarageVehicles:
         try:
             del self.vehicles[vehicle_id]
         except KeyError as err:
-            logger.error(f'Vehicle {vehicle_id} in garage: {self.garage_id} not found')
+            msg = f'Vehicle {vehicle_id} in garage: {self.garage_id} not found'
+            logger.error(msg)
 
 
 class Garage:

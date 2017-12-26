@@ -16,4 +16,3 @@ class Account:
 
     def check_password(self):
         pass
-
