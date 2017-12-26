@@ -1,6 +1,8 @@
+import logging
 from .garage import Garage
 from .user_account import User
 
+logger = logging.getLogger(__name__)
 
 class AccessControl:
 
