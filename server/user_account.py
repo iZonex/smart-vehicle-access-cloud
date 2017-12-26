@@ -1,7 +1,7 @@
 
 class UserProfile:
 
-    def __init__(self, user_id, country, city, address, zip,
+    def __init__(self, user_id, country, city, address, zip_code,
                  phone_number):
         self.country = country
         self.city = city
