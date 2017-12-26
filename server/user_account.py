@@ -6,7 +6,7 @@ class UserProfile:
         self.country = country
         self.city = city
         self.address = address
-        self.zip = zip
+        self.zip_code = zip_code
         self.phone_number = phone_number
 
 
